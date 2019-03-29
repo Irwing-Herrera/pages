@@ -1,0 +1,47 @@
+.header-image>img {
+    object-fit: cover;
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    top: 26%;
+    left: 50%;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.wave-section {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 31vh;
+    transform: translateY(-55%);
+    fill: white;
+    z-index: 1;
+}
+
+.cards {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.icono-card {
+    font-size: 5rem;
+    color: #ffc15e;
+}
+
+.card-subtitle {
+    font-family: 'Fredoka One', cursive;
+}
+
+.card-text {
+    font-family: 'Ubuntu', sans-serif;
+}
