@@ -1,36 +1,53 @@
+.container-page-home {
+    height: 100%;
+}
+
 .header-image>img {
     object-fit: cover;
     width: 100vw;
-    height: 70vh;
+    height: 96vh;
     position: relative;
     text-align: center;
 }
 
 .centered {
-    top: 26%;
+    top: 43%;
     left: 50%;
+    width: 83vw;
+    height: 100%;
     color: white;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 5rem;
-    font-family: 'Fredoka One', cursive;
+}
+
+.titulo-header {
+    font-family: 'Patua One', cursive;
+    font-size: 3.5rem;
+}
+
+.text-header {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
 }
 
 .wave-section {
     overflow: hidden;
     position: absolute;
     width: 100%;
-    height: 31vh;
+    height: 40vh;
     transform: translateY(-55%);
     fill: white;
-    z-index: 1;
 }
 
 .cards {
     width: 100vw;
-    height: 100%;
+    height: 40vh;
     position: absolute;
-    z-index: 2;
+}
+
+.card {
+    width: 70vw;
+    height: 32vh;
 }
 
 .icono-card {
