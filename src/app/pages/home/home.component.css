@@ -5,7 +5,7 @@
 .header-image>img {
     object-fit: cover;
     width: 100vw;
-    height: 96vh;
+    height: 100vh;
     position: relative;
     text-align: center;
 }
@@ -34,10 +34,14 @@
     overflow: hidden;
     position: absolute;
     width: 100%;
-    height: 40vh;
+    height: 56vh;
     transform: translateY(-55%);
     fill: white;
+    margin-top: 4rem;
 }
+
+
+/* Cartas */
 
 .cards {
     width: 100vw;
@@ -47,7 +51,7 @@
 
 .card {
     width: 70vw;
-    height: 32vh;
+    height: 100%;
 }
 
 .icono-card {
@@ -61,4 +65,59 @@
 
 .card-text {
     font-family: 'Ubuntu', sans-serif;
+}
+
+.border-color {
+    border-right: 1px solid #e7eaf6;
+}
+
+
+/* FIN Cartas */
+
+.seccion-2 {
+    width: 100%;
+    margin-top: 16rem;
+}
+
+.seccion-2-image {
+    width: 30vw;
+}
+
+.wave-section-2 {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    fill: #183661;
+    margin-top: 4rem;
+}
+
+.contactos {
+    width: 100%;
+    background-color: #183661;
+}
+
+.img-card {
+    width: 13rem;
+    height: 13rem;
+}
+
+.img-card-size {
+    width: 100%;
+    height: 100%;
+}
+
+.nombre-card {
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+    color: #f6f5f5;
+}
+
+.texto-card {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .8rem;
+    color: #e7eaf6;
+}
+
+.icon-red-card {
+    width: 1.5rem;
 }
