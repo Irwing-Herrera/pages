@@ -1,22 +1,50 @@
 <div id="pageHome" class="container-page-home">
 
     <div class="header-image">
-        <img src="assets/backgif.gif" class="img-fluid" />
+        <img src="assets/back.jpg" class="img-fluid" />
         <div class="centered">
             <div class="row d-vertical h100">
-                <div class="col-7">
-                    <div class="row">
-                        <div class="col-12 titulo-header">
-                            <label>Bienvenido</label>
-                        </div>
-                        <div class="col-12 text-header text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime soluta voluptas! Quasi architecto temporibus magni ducimus, pariatur ab quae reprehenderit dignissimos, vel accusamus nisi ipsum amet provident ullam aspernatur!</div>
+
+                <div class="col-1">
+                    <div class="d-vertical text-white return-header">
+                        <i class="fas fa-angle-left"></i>
                     </div>
                 </div>
-                <div class="col-2"></div>
+
+                <div class="col-6">
+                    <div class="row">
+
+                        <div *ngIf="header == 0">
+
+                            <div class="col-12 titulo-header">
+                                <label>Bienvenido</label>
+                            </div>
+                            <div class="col-12 text-header text-justify">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime soluta voluptas! Quasi architecto temporibus magni ducimus, pariatur ab quae reprehenderit dignissimos, vel accusamus nisi ipsum amet provident ullam aspernatur!</div>
+                        </div>
+
+                        <div *ngIf="header == 1">
+
+                            <div class="col-12 titulo-header">
+                                <label>Header 2</label>
+                            </div>
+                            <div class="col-12 text-header text-justify">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime soluta voluptas! Quasi architecto temporibus magni ducimus, pariatur ab quae reprehenderit dignissimos, vel accusamus nisi ipsum amet provident ullam aspernatur!</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1"></div>
                 <div class="col-3">
                     <img src="assets/computer.svg" width="296" class="img-fluid" />
                 </div>
+
+                <div class="col-1">
+                    <div class="d-vertical text-white return-header">
+                        <i class="fas fa-angle-right rounded-circle"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

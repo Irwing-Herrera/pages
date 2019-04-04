@@ -24,6 +24,10 @@
     text-align: justify;
 }
 
+.p-none {
+    padding: 0px !important;
+}
+
 
 /* #toast-container {
     top: auto !important;

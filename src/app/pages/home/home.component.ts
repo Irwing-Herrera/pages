@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  header:number = 0;
+  maxHeader:number = 1;
+
+  constructor() {}
 
   ngOnInit() {
+    setInterval(function(){ 
+      this.header = (this.header == this.maxHeader) ? this.maxHeader : this.header; 
+    }, 3000);
   }
 
 }
