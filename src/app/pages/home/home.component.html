@@ -7,41 +7,58 @@
 
                 <div class="col-1">
                     <div class="d-vertical text-white return-header">
-                        <i class="fas fa-angle-left"></i>
+                        <i class="fas fa-angle-left" (click)="returnHeader()"></i>
                     </div>
                 </div>
 
                 <div class="col-6">
-                    <div class="row">
+                    <div class="row" [@fadeAnimation]="header">
 
                         <div *ngIf="header == 0">
-
                             <div class="col-12 titulo-header">
-                                <label>Bienvenido</label>
+                                <label>Header 1</label>
                             </div>
                             <div class="col-12 text-header text-justify">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime soluta voluptas! Quasi architecto temporibus magni ducimus, pariatur ab quae reprehenderit dignissimos, vel accusamus nisi ipsum amet provident ullam aspernatur!</div>
                         </div>
 
                         <div *ngIf="header == 1">
-
                             <div class="col-12 titulo-header">
                                 <label>Header 2</label>
                             </div>
                             <div class="col-12 text-header text-justify">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime soluta voluptas! Quasi architecto temporibus magni ducimus, pariatur ab quae reprehenderit dignissimos, vel accusamus nisi ipsum amet provident ullam aspernatur!</div>
+                                Build responsive, mobile-first projects on the wklkl k h u h uh uuhhuguhg eb with the world’s most popular front-end component library.</div>
+                        </div>
+
+                        <div *ngIf="header == 2">
+                            <div class="col-12 titulo-header">
+                                <label>Header 3</label>
+                            </div>
+                            <div class="col-12 text-header text-justify">
+                                Build responsive, mobile-first projects on the wklkl k h u h uh uuhhuguhg eb with the world’s most popular front-end component library.</div>
                         </div>
 
                     </div>
                 </div>
                 <div class="col-1"></div>
-                <div class="col-3">
-                    <img src="assets/computer.svg" width="296" class="img-fluid" />
+                <div class="col-3" [@fadeAnimation]="header">
+
+                    <div *ngIf="header == 0">
+                        <img src="assets/computer.svg" width="296" class="img-fluid" />
+                    </div>
+
+                    <div *ngIf="header == 1">
+                        <img src="assets/online-shop.svg" width="296" class="img-fluid" />
+                    </div>
+
+                    <div *ngIf="header == 2">
+                        <img src="assets/payment-method.svg" width="296" class="img-fluid" />
+                    </div>
                 </div>
 
                 <div class="col-1">
                     <div class="d-vertical text-white return-header">
-                        <i class="fas fa-angle-right rounded-circle"></i>
+                        <i class="fas fa-angle-right" (click)="nextHeader()"></i>
                     </div>
                 </div>
 
