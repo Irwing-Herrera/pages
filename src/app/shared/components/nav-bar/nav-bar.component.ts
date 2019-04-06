@@ -12,4 +12,8 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
   }
 
+  navegar(navegar: string){
+      let div = document.getElementById(navegar);
+      div.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 }
